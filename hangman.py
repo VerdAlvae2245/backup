@@ -11,33 +11,20 @@ Right = []
 Wrong = []
 guessList = []
 
+for letter in myList:
+	Right.append("_")
+
 misses = 0
 
-tries = input("How mabnt tries would you like to have? ")
-# How to change a string into a list
-# how to make a list with _ for characters
-
-for letter in words:
-	guessList.append("_")
-print(guessList)
+tries = input("How mant tries would you like to have? ")
 
 letter = input("Enter a letter: ")
 
-if letter in myList:
-	index = guessList.index(guess)
+if letter in words:
+	index = myList.index(letter)
 	Right.pop(int(index))
-	Right.insert(int(index),guess)
+	Right.insert(int(index),letter)
 	print(Right)
-
-else:
-	print("Missed")
-
-
-
-
-
-
-
-
-
-
+	print("You have " )
+if letter not in words:
+	print("Wrong")
