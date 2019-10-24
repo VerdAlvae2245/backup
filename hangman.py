@@ -25,6 +25,6 @@ if letter in words:
 	Right.pop(int(index))
 	Right.insert(int(index),letter)
 	print(Right)
-	print("You have " )
+	print("You have " - str(int(tries) )
 if letter not in words:
 	print("Wrong")
